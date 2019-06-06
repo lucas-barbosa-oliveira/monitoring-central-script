@@ -1,42 +1,58 @@
 export class MonitoringCentral {
 
-    public startSdnConfiguration(): boolean{
-        return false;
+    public startSdnConfiguration(): Promise<boolean>{
+        return new Promise<boolean>((resolve, reject) => {resolve()});;
     }
 
-    public startDicomServer(): boolean{
-        return false;
+    public startDicomServer(): Promise<boolean>{
+        return new Promise<boolean>((resolve, reject) => {resolve()});;
     }
 
-    public startWireshark(): boolean{
-        return false;
+    public startSecondDicomServer(): Promise<boolean>{
+        return new Promise<boolean>((resolve, reject) => {resolve()});;
     }
 
-    public startOpenIce(): boolean{
-        return false;
+    public startWireshark(): Promise<boolean>{
+        return new Promise<boolean>((resolve, reject) => {resolve()});;
     }
 
-    public startUdpServer(): boolean{
-        return false;
+    public startOpenIce(): Promise<boolean>{
+        return new Promise<boolean>((resolve, reject) => {resolve()});;
     }
 
-    public cleanSdnConfiguration(): boolean{
-        return false;
+    public startUdpServer(): Promise<boolean>{
+        return new Promise<boolean>((resolve, reject) => {resolve()});;
     }
 
-    public closeDicomServer(): boolean{
-        return false;
+    public startVoipServer(): Promise<boolean>{
+        return new Promise<boolean>((resolve, reject) => {resolve()});;
     }
 
-    public closetWireshark(): boolean{
-        return false;
+    public cleanSdnConfiguration(): Promise<boolean>{
+        return new Promise<boolean>((resolve, reject) => {resolve()});;
     }
 
-    public closeOpenIce(): boolean{
-        return false;
+    public closeDicomServer(): Promise<boolean>{
+        return new Promise<boolean>((resolve, reject) => {resolve()});;
     }
 
-    public closeUdpServer(): boolean{
-        return false;
+    public closeSecondDicomServer(): Promise<boolean>{
+        return new Promise<boolean>((resolve, reject) => {resolve()});;
+    }
+
+    public closeWireshark(): Promise<boolean>{
+        return new Promise<boolean>((resolve, reject) => {resolve()});;
+    }
+
+    public closeOpenIce(): Promise<boolean>{
+        return new Promise<boolean>((resolve, reject) => {resolve()});;
+    }
+
+    public closeUdpServer(): Promise<boolean>{
+        return new Promise<boolean>((resolve, reject) => {resolve()});;
+    }
+
+    public closeVoipServer(): Promise<boolean>{
+        return new Promise<boolean>((resolve, reject) => {resolve()});;
     }
 }

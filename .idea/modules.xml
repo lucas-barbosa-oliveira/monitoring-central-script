@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/monitoring-center-script.iml" filepath="$PROJECT_DIR$/.idea/monitoring-center-script.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../monitoring-central-script/.idea/monitoring-central-script.iml" filepath="$PROJECT_DIR$/../monitoring-central-script/.idea/monitoring-central-script.iml" />
     </modules>
   </component>
 </project>
