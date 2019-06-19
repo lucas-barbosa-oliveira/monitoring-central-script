@@ -2,16 +2,17 @@
   "name": "monitoring-central-script",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
   "scripts": {
     "start": "npm run build",
-    "build": "tsc; node dist/index.js",
+    "build": "tsc;",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@types/node": "^12.0.5",
-    "amqp-ts": "^1.4.0"
+    "@types/shelljs": "^0.8.5",
+    "amqp-ts": "^1.4.0",
+    "shelljs": "^0.8.3"
   }
 }

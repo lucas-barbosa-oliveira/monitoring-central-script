@@ -1,15 +1,20 @@
 "use strict";
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
 Object.defineProperty(exports, "__esModule", { value: true });
+const shell = __importStar(require("shelljs"));
 class MonitoringCentral {
-    startSdnConfiguration() {
-        return new Promise((resolve, reject) => { resolve(); });
-        ;
+    startSdnConfiguration(file) {
+        return new Promise((resolve, reject) => {
+            shell.exec(file);
+        });
     }
     startDicomServer() {
-        return new Promise((resolve, reject) => { resolve(); });
-        ;
-    }
-    startSecondDicomServer() {
         return new Promise((resolve, reject) => { resolve(); });
         ;
     }
@@ -34,10 +39,6 @@ class MonitoringCentral {
         ;
     }
     closeDicomServer() {
-        return new Promise((resolve, reject) => { resolve(); });
-        ;
-    }
-    closeSecondDicomServer() {
         return new Promise((resolve, reject) => { resolve(); });
         ;
     }

@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f79afae0-5d65-43de-8103-f4e329f01d2b" name="Default Changelist" comment="" />
+    <list default="true" id="f79afae0-5d65-43de-8103-f4e329f01d2b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/monitoring.central.index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/application/monitoring.central.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/communication.bus.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/communication.bus.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/monitoring.central.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/monitoring.central.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/communication.bus.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/communication.bus.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/monitoring.central.ts" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -12,68 +24,105 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../monitoring-central-script/package.json">
+        <entry file="file://$PROJECT_DIR$/dicom.client.index.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../monitoring-central-script/tsconfig.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../monitoring-central-script/index.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="149" selection-start-line="149" selection-start-column="3" selection-end-line="155" selection-end-column="6" />
+            <state relative-caret-position="170">
+              <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="16" selection-end-column="13" />
               <folding>
-                <element signature="n#!!block;n#mainUdpTcp#0" />
-                <element signature="n#!!block;n#mainUdpTcp#1" />
-                <element signature="n#!!block;n#mainUdpTcp#2" />
-                <element signature="n#!!block;n#main#0" />
-                <element signature="n#!!block;n#mainUdpTcp#1" />
-                <element signature="n#!!block;n#mainUdpTcp#2" />
-                <element signature="e#4499#4537#0" />
-                <element signature="e#4566#4660#0" />
-                <element signature="e#4675#4691#0" />
+                <element signature="e#0#72#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../monitoring-central-script/src/monitoring.central.ts">
+        <entry file="file://$PROJECT_DIR$/medical.devices.index.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="32" lean-forward="true" selection-start-column="32" selection-end-column="32" />
+            <state relative-caret-position="170">
+              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="16" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#72#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../monitoring-central-script/src/communication.bus.ts">
+        <entry file="file://$PROJECT_DIR$/src/application/voip.client.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="132" column="33" selection-start-line="132" selection-start-column="33" selection-end-line="132" selection-end-column="33" />
+            <state relative-caret-position="187">
+              <caret line="11" column="26" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../monitoring-central-script/node_modules/amqp-ts/src/amqp-ts.ts">
+        <entry file="file://$PROJECT_DIR$/voip.client.indext.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="245" column="2" selection-start-line="245" selection-start-column="2" selection-end-line="245" selection-end-column="2" />
+            <state relative-caret-position="170">
+              <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="16" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#72#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/scripts.udp.client.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="49" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/udp.client.index.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#72#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/udp.client.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="25" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/scripts.voip.client.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="50" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/medical.devices.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="30" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/scripts.medical.devices.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="54" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -101,23 +150,43 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/tsconfig.json" />
-        <option value="$PROJECT_DIR$/index.ts" />
         <option value="$PROJECT_DIR$/monitoring.central.ts" />
+        <option value="$PROJECT_DIR$/tsconfig.json" />
         <option value="$PROJECT_DIR$/src/communication.bus.ts" />
+        <option value="$PROJECT_DIR$/src/communication.bus.ts" />
+        <option value="$PROJECT_DIR$/scripts/100/teste.sh" />
+        <option value="$PROJECT_DIR$/utils/script.path.ts" />
+        <option value="$PROJECT_DIR$/utils/scriptsMonitoringCentral.ts" />
+        <option value="$PROJECT_DIR$/src/monitoring.central.ts" />
+        <option value="$PROJECT_DIR$/utils/scripts.monitoring.central.ts" />
+        <option value="$PROJECT_DIR$/src/application/dicom_client.ts" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/../monitoring-central-script/package.json" />
-        <option value="$PROJECT_DIR$/../monitoring-central-script/tsconfig.json" />
-        <option value="$PROJECT_DIR$/../monitoring-central-script/src/monitoring.central.ts" />
-        <option value="$PROJECT_DIR$/../monitoring-central-script/src/communication.bus.ts" />
-        <option value="$PROJECT_DIR$/../monitoring-central-script/index.ts" />
+        <option value="$PROJECT_DIR$/index.ts" />
+        <option value="$PROJECT_DIR$/index.ts" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/second.dicom.client.index.ts" />
+        <option value="$PROJECT_DIR$/src/application/monitoring.central.ts" />
+        <option value="$PROJECT_DIR$/src/application/dicom.client.ts" />
+        <option value="$PROJECT_DIR$/src/application/medical.devices.ts" />
+        <option value="$PROJECT_DIR$/src/application/udp.client.ts" />
+        <option value="$PROJECT_DIR$/src/application/voip.client.ts" />
+        <option value="$PROJECT_DIR$/utils/scripts.dicom.client.ts" />
+        <option value="$PROJECT_DIR$/utils/scripts.medical.devices.ts" />
+        <option value="$PROJECT_DIR$/utils/scripts.voip.client.ts" />
+        <option value="$PROJECT_DIR$/utils/scripts.udp.client.ts" />
+        <option value="$PROJECT_DIR$/monitoring.central.index.ts" />
+        <option value="$PROJECT_DIR$/dicom.client.index.ts" />
+        <option value="$PROJECT_DIR$/medical.devices.index.ts" />
+        <option value="$PROJECT_DIR$/voip.client.indext.ts" />
+        <option value="$PROJECT_DIR$/udp.client.index.ts" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="33" />
     <option name="y" value="24" />
-    <option name="width" value="1337" />
-    <option name="height" value="1048" />
+    <option name="width" value="1333" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -125,7 +194,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -136,25 +204,54 @@
             <path>
               <item name="monitoring-central-script" type="b2602c69:ProjectViewProjectNode" />
               <item name="monitoring-central-script" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="monitoring-central-script" type="b2602c69:ProjectViewProjectNode" />
+              <item name="monitoring-central-script" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="monitoring-central-script" type="b2602c69:ProjectViewProjectNode" />
+              <item name="monitoring-central-script" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="monitoring-central-script" type="b2602c69:ProjectViewProjectNode" />
+              <item name="monitoring-central-script" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/scripts/general/voip_client" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scripts/general/voip_client" />
+      <recent name="$PROJECT_DIR$/scripts/general/medical_devices" />
+      <recent name="$PROJECT_DIR$/scripts/general/dicom_client" />
+      <recent name="$PROJECT_DIR$/scripts/general" />
+      <recent name="$PROJECT_DIR$/scripts/100/udp_server" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/application" />
+      <recent name="$PROJECT_DIR$/src/infrastructure" />
+      <recent name="$PROJECT_DIR$/scripts/500/monitoring_central" />
+      <recent name="$PROJECT_DIR$/scripts/100/monitoring_central" />
+      <recent name="$PROJECT_DIR$/scripts/general/monitoring_central" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -179,24 +276,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1559820650073</updated>
-      <workItem from="1559820652335" duration="16075000" />
+      <workItem from="1559820652335" duration="20681000" />
+      <workItem from="1559880247269" duration="3318000" />
+      <workItem from="1560182129910" duration="824000" />
+      <workItem from="1560826334555" duration="24619000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16075000" />
+    <option name="totallyTimeSpent" value="49442000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="33" y="-4" width="1333" height="772" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24961832" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24961832" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="TypeScript" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.2316891" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="npm" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32884902" />
@@ -204,26 +301,32 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32884902" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.5007474" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32884902" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24961832" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="TypeScript" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="2" visible="true" weight="0.3168909" />
-      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="4" />
-      <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="bottom" id="Run" order="7" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24961832" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="npm" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32884902" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.5007474" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32884902" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -238,78 +341,407 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../monitoring-central-script/lib/index.js">
+    <entry file="file://$PROJECT_DIR$/dist/src/monitoring.central.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="1398" column="10" selection-start-line="1398" selection-start-column="10" selection-end-line="1398" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es2015.promise.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../monitoring-central-script/dist/src/monitoring.central.js">
+    <entry file="file://$PROJECT_DIR$/dist/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../monitoring-central-script/dist/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../monitoring-central-script/node_modules/amqp-ts/src/amqp-ts.ts">
+    <entry file="file://$PROJECT_DIR$/node_modules/amqp-ts/src/amqp-ts.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
+        <state relative-caret-position="4097">
           <caret line="245" column="2" selection-start-line="245" selection-start-column="2" selection-end-line="245" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../monitoring-central-script/package.json">
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../monitoring-central-script/tsconfig.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="442">
           <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../monitoring-central-script/src/monitoring.central.ts">
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/shelljs/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1013" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/shelljs/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="744" column="4" selection-start-line="744" selection-start-column="4" selection-end-line="744" selection-end-column="4" />
+          <folding>
+            <element signature="e#715#963#0" />
+            <element signature="e#1012#1087#0" />
+            <element signature="e#1155#2128#0" />
+            <element signature="e#1158#1761#0" />
+            <element signature="e#1865#2059#0" />
+            <element signature="e#2130#2721#0" />
+            <element signature="e#2784#3046#0" />
+            <element signature="e#2787#2979#0" />
+            <element signature="e#3048#3235#0" />
+            <element signature="e#3300#4102#0" />
+            <element signature="e#3303#3775#0" />
+            <element signature="e#3852#4043#0" />
+            <element signature="e#4104#4561#0" />
+            <element signature="e#4626#5228#0" />
+            <element signature="e#4629#4891#0" />
+            <element signature="e#4997#5157#0" />
+            <element signature="e#5230#5487#0" />
+            <element signature="e#5552#6183#0" />
+            <element signature="e#5555#5857#0" />
+            <element signature="e#5934#6124#0" />
+            <element signature="e#6185#6478#0" />
+            <element signature="e#6542#7114#0" />
+            <element signature="e#6545#6807#0" />
+            <element signature="e#6909#7047#0" />
+            <element signature="e#7116#7371#0" />
+            <element signature="e#7408#7988#0" />
+            <element signature="e#8167#8701#0" />
+            <element signature="e#8170#8630#0" />
+            <element signature="e#8703#9154#0" />
+            <element signature="e#9216#10522#0" />
+            <element signature="e#9219#9726#0" />
+            <element signature="e#9956#10331#0" />
+            <element signature="e#10524#11021#0" />
+            <element signature="e#11084#12361#0" />
+            <element signature="e#11087#11660#0" />
+            <element signature="e#11846#12228#0" />
+            <element signature="e#12363#12934#0" />
+            <element signature="e#12969#13202#0" />
+            <element signature="e#13287#13938#0" />
+            <element signature="e#13290#13643#0" />
+            <element signature="e#13698#13901#0" />
+            <element signature="e#13940#14285#0" />
+            <element signature="e#14353#17881#0" />
+            <element signature="e#14356#15008#0" />
+            <element signature="e#15054#15707#0" />
+            <element signature="e#15753#16368#0" />
+            <element signature="e#16416#16809#0" />
+            <element signature="e#16838#17232#0" />
+            <element signature="e#17261#17615#0" />
+            <element signature="e#17646#17862#0" />
+            <element signature="e#17883#18487#0" />
+            <element signature="e#18558#22735#0" />
+            <element signature="e#18561#19307#0" />
+            <element signature="e#19353#20100#0" />
+            <element signature="e#20146#20820#0" />
+            <element signature="e#20868#21351#0" />
+            <element signature="e#21380#21868#0" />
+            <element signature="e#21897#22312#0" />
+            <element signature="e#22343#22716#0" />
+            <element signature="e#22737#23398#0" />
+            <element signature="e#23465#25188#0" />
+            <element signature="e#23468#23726#0" />
+            <element signature="e#23759#24101#0" />
+            <element signature="e#24135#24478#0" />
+            <element signature="e#24512#25140#0" />
+            <element signature="e#25190#25808#0" />
+            <element signature="e#25873#26576#0" />
+            <element signature="e#25876#26238#0" />
+            <element signature="e#26304#26528#0" />
+            <element signature="e#26578#26931#0" />
+            <element signature="e#26964#27109#0" />
+            <element signature="e#27155#27258#0" />
+            <element signature="e#27553#27863#0" />
+            <element signature="e#27941#28252#0" />
+            <element signature="e#28342#28638#0" />
+            <element signature="e#28717#28931#0" />
+            <element signature="e#29029#29191#0" />
+            <element signature="e#29259#29612#0" />
+            <element signature="e#29677#29706#0" />
+            <element signature="e#29724#29759#0" />
+            <element signature="e#29779#29820#0" />
+            <element signature="e#29903#30399#0" />
+            <element signature="e#29906#29984#0" />
+            <element signature="e#30006#30158#0" />
+            <element signature="e#30179#30377#0" />
+            <element signature="e#30440#30605#0" />
+            <element signature="e#30443#30472#0" />
+            <element signature="e#30490#30525#0" />
+            <element signature="e#30545#30586#0" />
+            <element signature="e#30671#33774#0" />
+            <element signature="e#30674#30933#0" />
+            <element signature="e#30961#31162#0" />
+            <element signature="e#31193#31633#0" />
+            <element signature="e#31655#32016#0" />
+            <element signature="e#32040#32088#0" />
+            <element signature="e#32112#32648#0" />
+            <element signature="e#32672#33138#0" />
+            <element signature="e#33160#33367#0" />
+            <element signature="e#33391#33437#0" />
+            <element signature="e#33461#33751#0" />
+            <element signature="e#33925#35441#0" />
+            <element signature="e#33928#34708#0" />
+            <element signature="e#34780#35376#0" />
+            <element signature="e#35525#37126#0" />
+            <element signature="e#35528#36381#0" />
+            <element signature="e#36454#37071#0" />
+            <element signature="e#37128#37964#0" />
+            <element signature="e#38023#38199#0" />
+            <element signature="e#38241#38391#0" />
+            <element signature="e#38535#38570#0" />
+            <element signature="e#38603#38859#0" />
+            <element signature="e#38861#39027#0" />
+            <element signature="e#39093#39160#0" />
+            <element signature="e#39096#39143#0" />
+            <element signature="e#39192#39378#0" />
+            <element signature="e#39380#39416#0" />
+            <element signature="e#39481#40078#0" />
+            <element signature="e#39484#39761#0" />
+            <element signature="e#39867#40007#0" />
+            <element signature="e#40080#40350#0" />
+            <element signature="e#40414#40476#0" />
+            <element signature="e#40417#40459#0" />
+            <element signature="e#40508#40694#0" />
+            <element signature="e#40696#40730#0" />
+            <element signature="e#40795#41261#0" />
+            <element signature="e#40798#41088#0" />
+            <element signature="e#41156#41211#0" />
+            <element signature="e#41263#41546#0" />
+            <element signature="e#41581#41843#0" />
+            <element signature="e#41936#42514#0" />
+            <element signature="e#41939#42033#0" />
+            <element signature="e#42054#42123#0" />
+            <element signature="e#42143#42220#0" />
+            <element signature="e#42242#42313#0" />
+            <element signature="e#42345#42419#0" />
+            <element signature="e#42448#42496#0" />
+            <element signature="e#42516#42553#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/100/teste.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="32" lean-forward="true" selection-start-column="32" selection-end-column="32" />
+          <caret column="28" selection-start-column="28" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../monitoring-central-script/src/communication.bus.ts">
+    <entry file="file://$PROJECT_DIR$/scripts/100/monitoring_central/start_sdn_configuration.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/100/start_wireshark.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/100/start_dicom_server.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/100/start_openice.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/100/start_udp_server.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/100/start_void_server.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/500/dicom_server.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/100/stop_sdn_configuration.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/100/stop_wireshark.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/100/stop_dicom_server.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/100/stop_openice.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/100/stop_udp_server.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/100/stop_void_server.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/general/monitoring_central/start_dicom_server.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/500/udp_client/start_udp_client.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/100/udp_client/start_udp_client.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/general/udp_client/stop_udp_client.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/general/dicom_client/start_dicom_client.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/general/dicom_client/stop_dicom_client.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/general/medical_devices/start_medical_devices_client.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/general/medical_devices/stop_medical_devices_client.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/general/voip_client/start_voip_client.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/general/voip_client/stop_voip_client.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/100/monitoring_central/start_sdn_manager.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/500/monitoring_central/start_sdn_manager.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/general/monitoring_central/stop_sdn_manager.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="132" column="33" selection-start-line="132" selection-start-column="33" selection-end-line="132" selection-end-column="33" />
+        <state relative-caret-position="85">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../monitoring-central-script/index.ts">
+    <entry file="file://$PROJECT_DIR$/second.dicom.client.index.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="149" selection-start-line="149" selection-start-column="3" selection-end-line="155" selection-end-column="6" />
+        <state relative-caret-position="85">
+          <caret line="5" column="86" selection-start-line="5" selection-start-column="86" selection-end-line="5" selection-end-column="86" />
           <folding>
+            <element signature="e#338#369#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/infrastructure/communication.bus.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="93" selection-start-line="22" selection-start-column="77" selection-end-line="22" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/monitoring.central.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="74" selection-start-line="74" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/scripts.monitoring.central.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monitoring.central.index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="15" lean-forward="true" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+          <folding>
+            <element signature="n#!!block;n#closeUdpTcp#0" />
+            <element signature="n#!!block;n#closeUdpUdp#0" />
+            <element signature="n#!!block;n#closeTcpTcp#0" />
             <element signature="n#!!block;n#mainUdpTcp#0" />
-            <element signature="n#!!block;n#mainUdpTcp#1" />
-            <element signature="n#!!block;n#mainUdpTcp#2" />
-            <element signature="n#!!block;n#main#0" />
-            <element signature="n#!!block;n#mainUdpTcp#1" />
-            <element signature="n#!!block;n#mainUdpTcp#2" />
-            <element signature="e#4499#4537#0" />
-            <element signature="e#4566#4660#0" />
-            <element signature="e#4675#4691#0" />
+            <element signature="n#!!block;n#mainUdpUdp#0" />
+            <element signature="n#!!block;n#mainTcpTcp#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/scripts.dicom.client.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="52" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/dicom.client.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/scripts.medical.devices.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="54" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dicom.client.index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/medical.devices.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medical.devices.index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/scripts.voip.client.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="50" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/voip.client.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/scripts.udp.client.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="49" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/voip.client.indext.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/udp.client.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/udp.client.index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#72#0" expanded="true" />
           </folding>
         </state>
       </provider>
