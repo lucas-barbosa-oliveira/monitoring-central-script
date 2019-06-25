@@ -9,28 +9,32 @@ let time: number = 3000;
 
 async function closeUdpTcp(): Promise<void> {
 
-    await central.closeSdnManager(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.STOP_SDN_MANAGER_SCRIPT);
-
-    // Clean sdn controller configuration
-    await central.cleanSdnConfiguration(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.STOP_SDN_CONFIGURATIONS_SCRIPT);
-
-    // Closing Network Monitoring over Wireshark
+    // await central.closeSdnController(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.STOP_SDN_CONTROLLER_SCRIPT);
+    //
+    // await central.closeSdnManager(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.STOP_SDN_MANAGER_SCRIPT);
+    //
+    // // Clean sdn controller configuration
+    // await central.cleanSdnConfiguration(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.STOP_SDN_CONFIGURATIONS_SCRIPT);
+    //
+    // // Closing Network Monitoring over Wireshark
     await central.closeWireshark(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.STOP_WIRESHARK_SCRIPT);
-
-    // Stoping to send messages from workstation DICOM
-    await bus.sendWorkstationDicomMenssage({action:'stop'});
-
-    // Closing Supervisor OpenICE and stoping to send messages from Medical Devices of OpenICE
-    await central.closeOpenIce(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.STOP_OPENICE_SCRIPT);
-    await bus.sendMedicalDeviceMenssage({action:'stop'});
-
-    // Closing UDP Server and stoping to send messages
-    await central.closeUdpServer(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.STOP_UDP_SERVER_SCRIPT);
-    await bus.sendUdpTrafficMenssage({action:'stop'});
+    //
+    // // Stoping to send messages from workstation DICOM
+    // await bus.sendWorkstationDicomMenssage({action:'stop'});
+    //
+    // // Closing Supervisor OpenICE and stoping to send messages from Medical Devices of OpenICE
+    // await central.closeOpenIce(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.STOP_OPENICE_SCRIPT);
+    // await bus.sendMedicalDeviceMenssage({action:'stop'});
+    //
+    // // Closing UDP Server and stoping to send messages
+    // await central.closeUdpServer(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.STOP_UDP_SERVER_SCRIPT);
+    // await bus.sendUdpTrafficMenssage({action:'stop'});
 
 }
 
 async function closeUdpUdp(): Promise<void> {
+
+    await central.closeSdnController(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.STOP_SDN_CONTROLLER_SCRIPT);
 
     await central.closeSdnManager(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.STOP_SDN_MANAGER_SCRIPT);
 
@@ -55,6 +59,8 @@ async function closeUdpUdp(): Promise<void> {
 
 async function closeTcpTcp(): Promise<void> {
 
+    await central.closeSdnController(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.STOP_SDN_CONTROLLER_SCRIPT);
+
     await central.closeSdnManager(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.STOP_SDN_MANAGER_SCRIPT);
 
     // Clean sdn controller configuration
@@ -76,6 +82,10 @@ async function mainUdpTcp(bandwitdh: string, sndManager: boolean): Promise<void>
     // Clear and Close all configuration and application
     await closeUdpTcp();
 
+    if (sndManager){
+        await central.startSdnController(__dirname,ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_SDN_CONTROLLER_SCRIPT);
+    }
+
     // Starting sdn controller configuration
     await central.startSdnConfiguration(path + ScriptsMonitoringCentral.MONITORING_CENTRAL + ScriptsMonitoringCentral.START_SDN_CONFIGURATIONS_SCRIPT);
 
@@ -87,7 +97,7 @@ async function mainUdpTcp(bandwitdh: string, sndManager: boolean): Promise<void>
     await bus.sendWorkstationDicomMenssage({action:'start'});
 
     // Starting Supervisor OpenICE and send a message for Medical Devices of OpenICE to sending data
-    await central.startOpenIce(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_OPENICE_SCRIPT);
+    await central.startOpenIce(__dirname,ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_OPENICE_SCRIPT);
     await bus.sendMedicalDeviceMenssage({action:'start'});
 
     // Starting UDP Server and send a message for start sending data
@@ -106,6 +116,10 @@ async function mainUdpUdp(bandwitdh: string, sndManager: boolean): Promise<void>
     // Clear and Close all configuration and application
     await closeUdpUdp();
 
+    if (sndManager){
+        await central.startSdnController(__dirname,ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_SDN_CONTROLLER_SCRIPT);
+    }
+
     // Starting sdn controller configuration
     await central.startSdnConfiguration(path + ScriptsMonitoringCentral.MONITORING_CENTRAL + ScriptsMonitoringCentral.START_SDN_CONFIGURATIONS_SCRIPT);
 
@@ -117,7 +131,7 @@ async function mainUdpUdp(bandwitdh: string, sndManager: boolean): Promise<void>
     await bus.sendCallVoIpMenssage({action:'start'});
 
     // Starting Supervisor OpenICE and send a message for Medical Devices of OpenICE to sending data
-    await central.startOpenIce(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_OPENICE_SCRIPT);
+    await central.startOpenIce(__dirname,ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_OPENICE_SCRIPT);
     await bus.sendMedicalDeviceMenssage({action:'start'});
 
     // Starting UDP Server and send a message for start sending data
@@ -134,6 +148,10 @@ async function mainTcpTcp(bandwitdh: string, sndManager: boolean): Promise<void>
 
     // Clear and Close all configuration and application
     await closeTcpTcp();
+
+    if (sndManager){
+        await central.startSdnController(__dirname,ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_SDN_CONTROLLER_SCRIPT);
+    }
 
     // Starting sdn controller configuration
     await central.startSdnConfiguration(path + ScriptsMonitoringCentral.MONITORING_CENTRAL + ScriptsMonitoringCentral.START_SDN_CONFIGURATIONS_SCRIPT);
