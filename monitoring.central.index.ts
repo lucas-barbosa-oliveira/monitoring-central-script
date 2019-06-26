@@ -5,7 +5,7 @@ import {ScriptsMonitoringCentral} from "./utils/scripts.monitoring.central";
 let bus: CommunicationBus = new CommunicationBus();
 let central: MonitoringCentral= new MonitoringCentral();
 
-let time: number = 30000;
+let time: number = 1800000;
 
 async function closeUdpTcp(): Promise<void> {
 
@@ -93,16 +93,16 @@ async function mainUdpTcp(bandwitdh: string, sndManager?: boolean): Promise<void
     await central.startWireshark(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_WIRESHARK_SCRIPT);
 
     // Starting DCM4CHEE and send a message for workstation DICOM sending images
-    // await central.startDicomServer(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_DICOM_SERVER_SCRIPT);
-    // await bus.sendWorkstationDicomMenssage({action:'start', bandwidth: bandwitdh});
+    await central.startDicomServer(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_DICOM_SERVER_SCRIPT);
+    await bus.sendWorkstationDicomMenssage({action:'start', bandwidth: bandwitdh});
 
     // Starting Supervisor OpenICE and send a message for Medical Devices of OpenICE to sending data
     await central.startOpenIce(__dirname,ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_OPENICE_SCRIPT);
     await bus.sendMedicalDeviceMenssage({action:'start'});
 
     // Starting UDP Server and send a message for start sending data
-    // await central.startUdpServer(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_UDP_SERVER_SCRIPT);
-    // await bus.sendUdpTrafficMenssage({action:'start', bandwidth: bandwitdh});
+    await central.startUdpServer(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_UDP_SERVER_SCRIPT);
+    await bus.sendUdpTrafficMenssage({action:'start', bandwidth: bandwitdh});
 
     if (sndManager){
         await central.startSdnManager(path + ScriptsMonitoringCentral.MONITORING_CENTRAL + ScriptsMonitoringCentral.START_SDN_MANAGER_SCRIPT);
@@ -172,7 +172,8 @@ async function mainTcpTcp(bandwitdh: string, sndManager?: boolean): Promise<void
 }
 
 bus.startConnection('192.168.0.105').then(async () => {
-    setInterval(mainUdpTcp, time, '100');
+    // setInterval(mainUdpTcp, time, '100');
+    mainUdpTcp('500')
 });
 
 

@@ -3,36 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f79afae0-5d65-43de-8103-f4e329f01d2b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/monitoring-central-script.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/monitoring-central-script.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dicom.client.index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dicom.client.index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medical.devices.index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/medical.devices.index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/monitoring.central.index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/monitoring.central.index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/general/medical_devices/start_medical_devices_client.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/general/medical_devices/start_medical_devices_client.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/general/medical_devices/stop_medical_devices_client.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/general/medical_devices/stop_medical_devices_client.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/general/monitoring_central/start_wireshark.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/general/monitoring_central/start_wireshark.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/general/monitoring_central/stop_openice.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/general/monitoring_central/stop_openice.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second.dicom.client.index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/second.dicom.client.index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/dicom.client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/dicom.client.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/medical.devices.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/medical.devices.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/monitoring.central.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/monitoring.central.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/udp.client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/udp.client.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/voip.client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/voip.client.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/infrastructure/communication.bus.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/communication.bus.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udp.client.index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/udp.client.index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/scripts.dicom.client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/scripts.dicom.client.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/scripts.medical.devices.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/scripts.medical.devices.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/scripts.monitoring.central.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/scripts.monitoring.central.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/scripts.udp.client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/scripts.udp.client.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/scripts.voip.client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/scripts.voip.client.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voip.client.indext.ts" beforeDir="false" afterPath="$PROJECT_DIR$/voip.client.indext.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -45,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/monitoring.central.index.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="100" column="39" selection-start-line="100" selection-start-column="14" selection-end-line="100" selection-end-column="39" />
+            <state relative-caret-position="494">
+              <caret line="104" selection-start-line="104" selection-end-line="105" />
               <folding>
                 <element signature="e#0#72#0" expanded="true" />
               </folding>
@@ -58,10 +31,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/general/medical_devices/stop_medical_devices_client.sh">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="22" selection-start-column="15" selection-end-column="22" />
+            <state relative-caret-position="45">
+              <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -120,7 +93,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/second.dicom.client.index.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
@@ -144,8 +117,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/general/monitoring_central/start_wireshark.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="24" selection-start-column="24" selection-end-column="24" />
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -184,7 +157,6 @@
         <option value="$PROJECT_DIR$/utils/scripts.voip.client.ts" />
         <option value="$PROJECT_DIR$/utils/scripts.udp.client.ts" />
         <option value="$PROJECT_DIR$/udp.client.index.ts" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/scripts/500/monitoring_central/start_sdn_configuration.sh" />
         <option value="$PROJECT_DIR$/scripts/100/monitoring_central/start_sdn_configuration.sh" />
         <option value="$PROJECT_DIR$/scripts/general/monitoring_central/stop_sdn_configuration.sh" />
@@ -215,14 +187,15 @@
         <option value="$PROJECT_DIR$/src/application/medical.devices.ts" />
         <option value="$PROJECT_DIR$/src/application/udp.client.ts" />
         <option value="$PROJECT_DIR$/src/application/voip.client.ts" />
-        <option value="$PROJECT_DIR$/scripts/general/monitoring_central/start_wireshark.sh" />
-        <option value="$PROJECT_DIR$/monitoring.central.index.ts" />
         <option value="$PROJECT_DIR$/scripts/general/medical_devices/stop_medical_devices_client.sh" />
         <option value="$PROJECT_DIR$/scripts/general/monitoring_central/stop_openice.sh" />
         <option value="$PROJECT_DIR$/scripts/general/medical_devices/start_medical_devices_client.sh" />
         <option value="$PROJECT_DIR$/medical.devices.index.ts" />
         <option value="$PROJECT_DIR$/voip.client.indext.ts" />
         <option value="$PROJECT_DIR$/second.dicom.client.index.ts" />
+        <option value="$PROJECT_DIR$/scripts/general/monitoring_central/start_wireshark.sh" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/monitoring.central.index.ts" />
       </list>
     </option>
   </component>
@@ -249,32 +222,7 @@
             <path>
               <item name="monitoring-central-script" type="b2602c69:ProjectViewProjectNode" />
               <item name="monitoring-central-script" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="monitoring-central-script" type="b2602c69:ProjectViewProjectNode" />
-              <item name="monitoring-central-script" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="general" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="monitoring-central-script" type="b2602c69:ProjectViewProjectNode" />
-              <item name="monitoring-central-script" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="general" type="462c0819:PsiDirectoryNode" />
-              <item name="medical_devices" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="monitoring-central-script" type="b2602c69:ProjectViewProjectNode" />
-              <item name="monitoring-central-script" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="general" type="462c0819:PsiDirectoryNode" />
-              <item name="monitoring_central" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="monitoring-central-script" type="b2602c69:ProjectViewProjectNode" />
-              <item name="monitoring-central-script" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="result" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -346,7 +294,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88915000" />
+    <option name="totallyTimeSpent" value="94842000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="32" y="-11" width="1889" height="1092" extended-state="6" />
@@ -441,13 +389,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -643,23 +584,6 @@
     <entry file="file://$PROJECT_DIR$/scripts/general/dicom_client/stop_dicom_client.sh">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/general/monitoring_central/start_wireshark.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" selection-start-column="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/monitoring.central.index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="100" column="39" selection-start-line="100" selection-start-column="14" selection-end-line="100" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#72#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/general/medical_devices/stop_medical_devices_client.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -725,6 +649,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/general/monitoring_central/start_wireshark.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monitoring.central.index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="104" selection-start-line="104" selection-end-line="105" />
+          <folding>
+            <element signature="e#0#72#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

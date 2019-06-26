@@ -1,6 +1,7 @@
 #ignore auto-generate files
 /dist
 /applications
+/result
 
 # Logs
 logs
