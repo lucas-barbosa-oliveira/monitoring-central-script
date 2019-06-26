@@ -9,26 +9,26 @@ let time: number = 30000;
 
 async function closeUdpTcp(): Promise<void> {
 
-    // await central.closeSdnController(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.STOP_SDN_CONTROLLER_SCRIPT);
-    //
-    // await central.closeSdnManager(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.STOP_SDN_MANAGER_SCRIPT);
-    //
-    // // Clean sdn controller configuration
-    // await central.cleanSdnConfiguration(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.STOP_SDN_CONFIGURATIONS_SCRIPT);
-    //
-    // // Closing Network Monitoring over Wireshark
+    await central.closeSdnController(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.STOP_SDN_CONTROLLER_SCRIPT);
+
+    await central.closeSdnManager(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.STOP_SDN_MANAGER_SCRIPT);
+
+    // Clean sdn controller configuration
+    await central.cleanSdnConfiguration(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.STOP_SDN_CONFIGURATIONS_SCRIPT);
+
+    // Closing Network Monitoring over Wireshark
     await central.closeWireshark(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.STOP_WIRESHARK_SCRIPT);
-    //
-    // // Stoping to send messages from workstation DICOM
-    // await bus.sendWorkstationDicomMenssage({action:'stop'});
-    //
-    // // Closing Supervisor OpenICE and stoping to send messages from Medical Devices of OpenICE
-    // await central.closeOpenIce(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.STOP_OPENICE_SCRIPT);
-    // await bus.sendMedicalDeviceMenssage({action:'stop'});
-    //
-    // // Closing UDP Server and stoping to send messages
-    // await central.closeUdpServer(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.STOP_UDP_SERVER_SCRIPT);
-    // await bus.sendUdpTrafficMenssage({action:'stop'});
+
+    // Stoping to send messages from workstation DICOM
+    await bus.sendWorkstationDicomMenssage({action:'stop'});
+
+    // Closing Supervisor OpenICE and stoping to send messages from Medical Devices of OpenICE
+    await central.closeOpenIce(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.STOP_OPENICE_SCRIPT);
+    await bus.sendMedicalDeviceMenssage({action:'stop'});
+
+    // Closing UDP Server and stoping to send messages
+    await central.closeUdpServer(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.STOP_UDP_SERVER_SCRIPT);
+    await bus.sendUdpTrafficMenssage({action:'stop'});
 
 }
 
@@ -77,7 +77,7 @@ async function closeTcpTcp(): Promise<void> {
 
 }
 
-async function mainUdpTcp(bandwitdh: string, sndManager: boolean): Promise<void> {
+async function mainUdpTcp(bandwitdh: string, sndManager?: boolean): Promise<void> {
     const path: string  = ScriptsMonitoringCentral.SCRIPT_PATH + bandwitdh
     // Clear and Close all configuration and application
     await closeUdpTcp();
@@ -93,16 +93,16 @@ async function mainUdpTcp(bandwitdh: string, sndManager: boolean): Promise<void>
     await central.startWireshark(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_WIRESHARK_SCRIPT);
 
     // Starting DCM4CHEE and send a message for workstation DICOM sending images
-    await central.startDicomServer(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_DICOM_SERVER_SCRIPT);
-    await bus.sendWorkstationDicomMenssage({action:'start', bandwidth: bandwitdh});
+    // await central.startDicomServer(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_DICOM_SERVER_SCRIPT);
+    // await bus.sendWorkstationDicomMenssage({action:'start', bandwidth: bandwitdh});
 
     // Starting Supervisor OpenICE and send a message for Medical Devices of OpenICE to sending data
     await central.startOpenIce(__dirname,ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_OPENICE_SCRIPT);
     await bus.sendMedicalDeviceMenssage({action:'start'});
 
     // Starting UDP Server and send a message for start sending data
-    await central.startUdpServer(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_UDP_SERVER_SCRIPT);
-    await bus.sendUdpTrafficMenssage({action:'start', bandwidth: bandwitdh});
+    // await central.startUdpServer(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_UDP_SERVER_SCRIPT);
+    // await bus.sendUdpTrafficMenssage({action:'start', bandwidth: bandwitdh});
 
     if (sndManager){
         await central.startSdnManager(path + ScriptsMonitoringCentral.MONITORING_CENTRAL + ScriptsMonitoringCentral.START_SDN_MANAGER_SCRIPT);
@@ -110,7 +110,7 @@ async function mainUdpTcp(bandwitdh: string, sndManager: boolean): Promise<void>
 
 }
 
-async function mainUdpUdp(bandwitdh: string, sndManager: boolean): Promise<void> {
+async function mainUdpUdp(bandwitdh: string, sndManager?: boolean): Promise<void> {
     const path: string  = ScriptsMonitoringCentral.SCRIPT_PATH + bandwitdh
 
     // // Clear and Close all configuration and application
@@ -143,7 +143,7 @@ async function mainUdpUdp(bandwitdh: string, sndManager: boolean): Promise<void>
     }
 }
 
-async function mainTcpTcp(bandwitdh: string, sndManager: boolean): Promise<void> {
+async function mainTcpTcp(bandwitdh: string, sndManager?: boolean): Promise<void> {
     const path: string  = ScriptsMonitoringCentral.SCRIPT_PATH + bandwitdh
 
     // Clear and Close all configuration and application
@@ -172,7 +172,7 @@ async function mainTcpTcp(bandwitdh: string, sndManager: boolean): Promise<void>
 }
 
 bus.startConnection('192.168.0.105').then(async () => {
-    setInterval(mainUdpUdp, time, '100');
+    setInterval(mainUdpTcp, time, '100');
 });
 
 

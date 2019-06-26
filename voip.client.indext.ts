@@ -5,7 +5,7 @@ import {VoipClient} from "./src/application/voip.client";
 let bus: CommunicationBus = new CommunicationBus();
 let voipClient: VoipClient = new VoipClient();
 
-bus.startConnection('192.168.25.236',true).then(async () => {
+bus.startConnection('192.168.0.105',true).then(async () => {
     bus.receiveMenssage('exchangeCallVoIp', 'queueWCallVoIp',
         async (msg) => {
             if (msg.action === 'start') {
