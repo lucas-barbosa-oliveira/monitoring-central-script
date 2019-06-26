@@ -1,5 +1,7 @@
 export abstract class ScriptsDicomClient {
 
+    public static readonly DICOM_CLIENT: string = '/dicom_client/'
+
     public static readonly SCRIPT_PATH: string = './scripts/'
 
     public static readonly NORMAL_SCENARIO: string = ScriptsDicomClient.SCRIPT_PATH + 'general/dicom_client/'

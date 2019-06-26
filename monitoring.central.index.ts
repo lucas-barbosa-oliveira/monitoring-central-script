@@ -94,7 +94,7 @@ async function mainUdpTcp(bandwitdh: string, sndManager: boolean): Promise<void>
 
     // Starting DCM4CHEE and send a message for workstation DICOM sending images
     await central.startDicomServer(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_DICOM_SERVER_SCRIPT);
-    await bus.sendWorkstationDicomMenssage({action:'start'});
+    await bus.sendWorkstationDicomMenssage({action:'start', bandwidth: bandwitdh});
 
     // Starting Supervisor OpenICE and send a message for Medical Devices of OpenICE to sending data
     await central.startOpenIce(__dirname,ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_OPENICE_SCRIPT);
@@ -161,10 +161,10 @@ async function mainTcpTcp(bandwitdh: string, sndManager: boolean): Promise<void>
 
     // Starting DCM4CHEE and send a message for workstation DICOM start sending images
     await central.startDicomServer(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_DICOM_SERVER_SCRIPT);
-    await bus.sendWorkstationDicomMenssage({action:'start'});
+    await bus.sendWorkstationDicomMenssage({action:'start', bandwidth: bandwitdh});
 
     // Send a message for The second workstation DICOM to start sending images
-    await bus.sendSecondWorkstationDicomMenssage({action:'start'});
+    await bus.sendSecondWorkstationDicomMenssage({action:'start', bandwidth: bandwitdh});
 
     if (sndManager){
         await central.startSdnManager(path + ScriptsMonitoringCentral.MONITORING_CENTRAL + ScriptsMonitoringCentral.START_SDN_MANAGER_SCRIPT);
