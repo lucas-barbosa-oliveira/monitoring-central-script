@@ -4,7 +4,7 @@ export class DicomClient {
 
     public startDicomClient(script: string): Promise<boolean>{
         return new Promise<boolean>((resolve, reject) => {
-            shell.exec(script)
+            shell.exec(script, {async:true})
             resolve()
         });
     }
