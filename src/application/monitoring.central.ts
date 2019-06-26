@@ -34,8 +34,16 @@ export class MonitoringCentral {
 
     public startDicomServer(script: string): Promise<boolean>{
         return new Promise<boolean>((resolve, reject) => {
-            shell.exec(script)
-            resolve()
+            let child = shell.exec(script, {async:true})
+
+            if (child.stdout) {
+                child.stdout.on('data', function (data) {
+                    if (data.toString().search('Start Server listening on 0.0.0.0:11112') !== -1){
+                        /* ... do something with data ... */
+                        resolve(true)
+                    }
+                });
+            }
         });
     }
 
@@ -60,9 +68,10 @@ export class MonitoringCentral {
 
             if (child.stdout) {
                 child.stdout.on('data', function (data) {
-                    console.log(data.toString().search('Server listening on UDP port 5001'))
-                    /* ... do something with data ... */
-                    resolve(true)
+                    if (data.toString().search('Server listening on UDP port 5001') !== -1){
+                        /* ... do something with data ... */
+                        resolve(true)
+                    }
                 });
             }
         });
@@ -70,7 +79,7 @@ export class MonitoringCentral {
 
     public startVoipServer(script: string): Promise<boolean>{
         return new Promise<boolean>((resolve, reject) => {
-            shell.exec(script)
+            shell.exec(script, {async:true})
             resolve()
         });
     }

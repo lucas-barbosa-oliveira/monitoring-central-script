@@ -5,7 +5,7 @@ import {ScriptsMonitoringCentral} from "./utils/scripts.monitoring.central";
 let bus: CommunicationBus = new CommunicationBus();
 let central: MonitoringCentral= new MonitoringCentral();
 
-let time: number = 3000;
+let time: number = 30000;
 
 async function closeUdpTcp(): Promise<void> {
 
@@ -113,7 +113,7 @@ async function mainUdpTcp(bandwitdh: string, sndManager: boolean): Promise<void>
 async function mainUdpUdp(bandwitdh: string, sndManager: boolean): Promise<void> {
     const path: string  = ScriptsMonitoringCentral.SCRIPT_PATH + bandwitdh
 
-    // Clear and Close all configuration and application
+    // // Clear and Close all configuration and application
     await closeUdpUdp();
 
     if (sndManager){
@@ -171,8 +171,8 @@ async function mainTcpTcp(bandwitdh: string, sndManager: boolean): Promise<void>
     }
 }
 
-bus.startConnection('192.168.25.236').then(async () => {
-    setInterval(mainUdpTcp, time, '100');
+bus.startConnection('192.168.0.105').then(async () => {
+    setInterval(mainUdpUdp, time, '100');
 });
 
 
