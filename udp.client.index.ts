@@ -5,7 +5,7 @@ import {UdpClient} from "./src/application/udp.client";
 let bus: CommunicationBus = new CommunicationBus();
 let udpClient: UdpClient = new UdpClient();
 
-bus.startConnection('192.168.25.236',true).then(async () => {
+bus.startConnection('192.168.0.105',true).then(async () => {
     bus.receiveMenssage('exchangeUdpTraffic', 'queueUdpTraffic',
         async (msg) => {
             if (msg.action === 'start') {
