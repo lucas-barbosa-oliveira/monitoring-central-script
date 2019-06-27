@@ -5,7 +5,7 @@ import {MedicalDevices} from "./src/application/medical.devices";
 let bus: CommunicationBus = new CommunicationBus();
 let medicalDevices: MedicalDevices = new MedicalDevices();
 
-bus.startConnection('192.168.0.105',true).then(async () => {
+bus.startConnection('192.168.3.1',true).then(async () => {
     bus.receiveMenssage('exchangeMedicalDevice', 'queueMedicalDevices',
         async (msg) => {
             if (msg.action === 'start') {
