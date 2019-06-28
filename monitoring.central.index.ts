@@ -6,6 +6,8 @@ let bus: CommunicationBus = new CommunicationBus();
 let central: MonitoringCentral= new MonitoringCentral();
 
 let time: number = 180000;
+let repeatNumber = 0;
+let tesNumber = 10;
 
 let openIceStarted = false;
 let dicomServerStarted = false;
@@ -82,6 +84,7 @@ async function closeTcpTcp(): Promise<void> {
 }
 
 async function mainUdpTcp(bandwitdh: string, sndManager?: boolean): Promise<void> {
+    repeatNumber++;
     const path: string  = ScriptsMonitoringCentral.SCRIPT_PATH + bandwitdh
     // Clear and Close all configuration and application
     await closeUdpTcp();
@@ -118,9 +121,14 @@ async function mainUdpTcp(bandwitdh: string, sndManager?: boolean): Promise<void
         await central.startSdnManager(__dirname,path + ScriptsMonitoringCentral.MONITORING_CENTRAL + "udp-tcp-" +  ScriptsMonitoringCentral.START_SDN_MANAGER_SCRIPT);
     }
 
+    if(repeatNumber === tesNumber){
+        await closeUdpUdp();
+        process.exit(0)
+    }
 }
 
 async function mainUdpUdp(bandwitdh: string, sndManager?: boolean): Promise<void> {
+    repeatNumber++;
     const path: string  = ScriptsMonitoringCentral.SCRIPT_PATH + bandwitdh
 
     // // Clear and Close all configuration and application
@@ -154,9 +162,15 @@ async function mainUdpUdp(bandwitdh: string, sndManager?: boolean): Promise<void
     if (sndManager){
         await central.startSdnManager(__dirname,path + ScriptsMonitoringCentral.MONITORING_CENTRAL + "udp-udp-" + ScriptsMonitoringCentral.START_SDN_MANAGER_SCRIPT);
     }
+
+    if(repeatNumber === tesNumber){
+        await closeUdpUdp();
+        process.exit(0)
+    }
 }
 
 async function mainTcpTcp(bandwitdh: string, sndManager?: boolean): Promise<void> {
+    repeatNumber++;
     const path: string  = ScriptsMonitoringCentral.SCRIPT_PATH + bandwitdh
 
     // Clear and Close all configuration and application
@@ -184,6 +198,11 @@ async function mainTcpTcp(bandwitdh: string, sndManager?: boolean): Promise<void
 
     if (sndManager){
         await central.startSdnManager(__dirname, path + ScriptsMonitoringCentral.MONITORING_CENTRAL + "tcp-tcp-" +  ScriptsMonitoringCentral.START_SDN_MANAGER_SCRIPT);
+    }
+
+    if(repeatNumber === tesNumber){
+        await closeUdpUdp();
+        process.exit(0)
     }
 }
 

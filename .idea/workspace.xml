@@ -80,8 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/general/monitoring_central/start_openice.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="30">
+              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -200,10 +200,10 @@
         <option value="$PROJECT_DIR$/scripts/500/monitoring_central/tcp-tcp-start_sdn_manager.sh" />
         <option value="$PROJECT_DIR$/scripts/500/monitoring_central/udp-tcp-start_sdn_manager.sh" />
         <option value="$PROJECT_DIR$/scripts/500/monitoring_central/udp-udp-start_sdn_manager.sh" />
-        <option value="$PROJECT_DIR$/scripts/general/monitoring_central/start_openice.sh" />
         <option value="$PROJECT_DIR$/monitoring.central.index.ts" />
         <option value="$PROJECT_DIR$/scripts/100/dicom_client/start_dicom_client.sh" />
         <option value="$PROJECT_DIR$/scripts/500/dicom_client/start_dicom_client.sh" />
+        <option value="$PROJECT_DIR$/scripts/general/monitoring_central/start_openice.sh" />
       </list>
     </option>
   </component>
@@ -366,18 +366,17 @@
       <workItem from="1561572930673" duration="81000" />
       <workItem from="1561594060929" duration="7164000" />
       <workItem from="1561648832176" duration="27000" />
-      <workItem from="1561677133277" duration="5448000" />
+      <workItem from="1561677133277" duration="5987000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110764000" />
+    <option name="totallyTimeSpent" value="111303000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="32" y="-11" width="1889" height="1092" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2725322" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2725322" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -391,7 +390,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32884902" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32008156" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32008156" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32884902" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -732,13 +731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/general/monitoring_central/start_openice.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/infrastructure/communication.bus.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
@@ -780,6 +772,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="72" selection-start-line="4" selection-start-column="72" selection-end-line="4" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/general/monitoring_central/start_openice.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>
