@@ -4,6 +4,10 @@
     <list default="true" id="f79afae0-5d65-43de-8103-f4e329f01d2b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/monitoring.central.index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/monitoring.central.index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/100/monitoring_central/start_sdn_manager.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/500/monitoring_central/start_sdn_manager.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/100/monitoring_central/udp-udp-start_sdn_manager.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/general/monitoring_central/stop_sdn_manager.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/general/monitoring_central/stop_sdn_manager.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/monitoring.central.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/monitoring.central.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,8 +23,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/monitoring.central.index.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-480">
-              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+            <state relative-caret-position="265">
+              <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
               <folding>
                 <element signature="e#0#72#0" expanded="true" />
               </folding>
@@ -29,88 +33,82 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scripts/100/monitoring_central/start_sdn_configuration.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/general/monitoring_central/start_sdn_controller.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/500/monitoring_central/start_sdn_configuration.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="43" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/udp.client.index.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-              <folding>
-                <element signature="e#0#72#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/voip.client.indext.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#72#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/second.dicom.client.index.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/scripts.monitoring.central.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/general/monitoring_central/start_wireshark.sh">
+        <entry file="file://$PROJECT_DIR$/scripts/general/monitoring_central/stop_sdn_manager.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret selection-end-column="14" />
+              <caret column="61" selection-start-column="61" selection-end-column="61" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/general/monitoring_central/start_udp_server.sh">
+        <entry file="file://$PROJECT_DIR$/scripts/general/monitoring_central/stop_sdn_controller.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
+              <caret column="61" lean-forward="true" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/monitoring.central.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/100/monitoring_central/udp-tcp-start_sdn_manager.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="41" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/100/monitoring_central/tcp-tcp-start_sdn_manager.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/500/monitoring_central/tcp-tcp-start_sdn_manager.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/500/monitoring_central/udp-tcp-start_sdn_manager.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/500/monitoring_central/udp-udp-start_sdn_manager.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/100/monitoring_central/udp-udp-start_sdn_manager.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -137,13 +135,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/communication.bus.ts" />
-        <option value="$PROJECT_DIR$/scripts/100/teste.sh" />
-        <option value="$PROJECT_DIR$/utils/script.path.ts" />
-        <option value="$PROJECT_DIR$/utils/scriptsMonitoringCentral.ts" />
-        <option value="$PROJECT_DIR$/src/monitoring.central.ts" />
-        <option value="$PROJECT_DIR$/src/application/dicom_client.ts" />
-        <option value="$PROJECT_DIR$/index.ts" />
         <option value="$PROJECT_DIR$/index.ts" />
         <option value="$PROJECT_DIR$/utils/scripts.medical.devices.ts" />
         <option value="$PROJECT_DIR$/utils/scripts.voip.client.ts" />
@@ -174,7 +165,6 @@
         <option value="$PROJECT_DIR$/scripts/100/dicom_client/start_dicom_client.sh" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/dicom.client.index.ts" />
-        <option value="$PROJECT_DIR$/src/application/monitoring.central.ts" />
         <option value="$PROJECT_DIR$/src/application/dicom.client.ts" />
         <option value="$PROJECT_DIR$/src/application/medical.devices.ts" />
         <option value="$PROJECT_DIR$/src/application/udp.client.ts" />
@@ -182,12 +172,20 @@
         <option value="$PROJECT_DIR$/scripts/general/medical_devices/stop_medical_devices_client.sh" />
         <option value="$PROJECT_DIR$/scripts/general/monitoring_central/stop_openice.sh" />
         <option value="$PROJECT_DIR$/scripts/general/medical_devices/start_medical_devices_client.sh" />
-        <option value="$PROJECT_DIR$/medical.devices.index.ts" />
         <option value="$PROJECT_DIR$/voip.client.indext.ts" />
         <option value="$PROJECT_DIR$/second.dicom.client.index.ts" />
         <option value="$PROJECT_DIR$/scripts/general/monitoring_central/start_wireshark.sh" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/medical.devices.index.ts" />
+        <option value="$PROJECT_DIR$/scripts/500/monitoring_central/tcp-tcp-start_sdn_manager.sh" />
+        <option value="$PROJECT_DIR$/scripts/500/monitoring_central/udp-tcp-start_sdn_manager.sh" />
+        <option value="$PROJECT_DIR$/scripts/500/monitoring_central/udp-udp-start_sdn_manager.sh" />
+        <option value="$PROJECT_DIR$/scripts/100/monitoring_central/udp-udp-start_sdn_manager.sh" />
+        <option value="$PROJECT_DIR$/scripts/100/monitoring_central/udp-tcp-start_sdn_manager.sh" />
+        <option value="$PROJECT_DIR$/scripts/100/monitoring_central/tcp-tcp-start_sdn_manager.sh" />
+        <option value="$PROJECT_DIR$/src/application/monitoring.central.ts" />
         <option value="$PROJECT_DIR$/monitoring.central.index.ts" />
+        <option value="$PROJECT_DIR$/scripts/general/monitoring_central/stop_sdn_manager.sh" />
       </list>
     </option>
   </component>
@@ -203,6 +201,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -219,22 +218,22 @@
               <item name="monitoring-central-script" type="b2602c69:ProjectViewProjectNode" />
               <item name="monitoring-central-script" type="462c0819:PsiDirectoryNode" />
               <item name="applications" type="462c0819:PsiDirectoryNode" />
-              <item name="monitoring-central" type="462c0819:PsiDirectoryNode" />
+              <item name="sdn_manager" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="monitoring-central-script" type="b2602c69:ProjectViewProjectNode" />
               <item name="monitoring-central-script" type="462c0819:PsiDirectoryNode" />
               <item name="applications" type="462c0819:PsiDirectoryNode" />
-              <item name="monitoring-central" type="462c0819:PsiDirectoryNode" />
-              <item name="openice" type="462c0819:PsiDirectoryNode" />
+              <item name="sdn_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="TCP-TCP" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="monitoring-central-script" type="b2602c69:ProjectViewProjectNode" />
               <item name="monitoring-central-script" type="462c0819:PsiDirectoryNode" />
               <item name="applications" type="462c0819:PsiDirectoryNode" />
-              <item name="monitoring-central" type="462c0819:PsiDirectoryNode" />
-              <item name="openice" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
+              <item name="sdn_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="TCP-TCP" type="462c0819:PsiDirectoryNode" />
+              <item name="500" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="monitoring-central-script" type="b2602c69:ProjectViewProjectNode" />
@@ -272,6 +271,13 @@
               <item name="monitoring-central-script" type="462c0819:PsiDirectoryNode" />
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
               <item name="general" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="monitoring-central-script" type="b2602c69:ProjectViewProjectNode" />
+              <item name="monitoring-central-script" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="general" type="462c0819:PsiDirectoryNode" />
+              <item name="medical_devices" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="monitoring-central-script" type="b2602c69:ProjectViewProjectNode" />
@@ -284,32 +290,31 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/scripts/100" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/scripts/500/monitoring_central" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scripts/500/monitoring_central" />
+      <recent name="$PROJECT_DIR$/scripts/100" />
+      <recent name="$PROJECT_DIR$/scripts/500" />
+      <recent name="$PROJECT_DIR$/applications/monitoring-central" />
+      <recent name="$PROJECT_DIR$/scripts/general/voip_client" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/application" />
       <recent name="$PROJECT_DIR$/src/infrastructure" />
       <recent name="$PROJECT_DIR$/scripts/500/monitoring_central" />
       <recent name="$PROJECT_DIR$/scripts/100/monitoring_central" />
       <recent name="$PROJECT_DIR$/scripts/general/monitoring_central" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/scripts/100" />
-      <recent name="$PROJECT_DIR$/scripts/500" />
-      <recent name="$PROJECT_DIR$/applications/monitoring-central" />
-      <recent name="$PROJECT_DIR$/scripts/general/voip_client" />
-      <recent name="$PROJECT_DIR$/scripts/general/medical_devices" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -348,15 +353,17 @@
       <workItem from="1561530948023" duration="1811000" />
       <workItem from="1561536782157" duration="1159000" />
       <workItem from="1561572930673" duration="81000" />
-      <workItem from="1561594060929" duration="3628000" />
+      <workItem from="1561594060929" duration="7164000" />
+      <workItem from="1561648832176" duration="27000" />
+      <workItem from="1561677133277" duration="2414000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101753000" />
+    <option name="totallyTimeSpent" value="107730000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="33" y="-4" width="1887" height="1084" extended-state="6" />
+    <frame x="32" y="-11" width="1889" height="1092" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2725322" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -372,7 +379,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32884902" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3282365" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32008156" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32884902" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -409,58 +416,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scripts/500/monitoring_central/start_sdn_manager.sh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/500/udp_client/start_udp_client.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="44" selection-start-column="44" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/general/udp_client/stop_udp_client.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="56" selection-start-column="56" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/applications/monitoring-central/floodlight/lib/gen-java/net/floodlightcontroller/packetstreamer/thrift/Packet.java" />
-    <entry file="file://$PROJECT_DIR$/scripts/100/monitoring_central/start_sdn_manager.sh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/scripts.medical.devices.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/general/monitoring_central/start_openice.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/general/monitoring_central/stop_dicom_server.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="50" selection-start-column="50" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/general/monitoring_central/stop_sdn_controller.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="46" selection-start-column="46" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/general/monitoring_central/stop_sdn_manager.sh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/general/monitoring_central/stop_udp_server.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -561,13 +516,6 @@
     <entry file="file://$PROJECT_DIR$/scripts/500/dicom_client/start_dicom_client.sh">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/monitoring.central.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="36" column="55" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/infrastructure/communication.bus.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
@@ -620,13 +568,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/general/medical_devices/start_medical_devices_client.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dicom.client.index.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -644,16 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/medical.devices.index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#72#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/udp.client.index.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -661,6 +592,13 @@
           <folding>
             <element signature="e#0#72#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/100/monitoring_central/start_sdn_configuration.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -681,37 +619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/scripts.monitoring.central.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/500/monitoring_central/start_sdn_configuration.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="43" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/monitoring.central.index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-480">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#72#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/general/monitoring_central/start_sdn_controller.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/general/monitoring_central/start_wireshark.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -722,14 +629,128 @@
     <entry file="file://$PROJECT_DIR$/scripts/general/monitoring_central/start_udp_server.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/100/monitoring_central/start_sdn_configuration.sh">
+    <entry file="file://$PROJECT_DIR$/medical.devices.index.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        <state relative-caret-position="165">
+          <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/500/monitoring_central/start_sdn_manager.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/500/monitoring_central/start_sdn_configuration.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="43" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/scripts.monitoring.central.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/general/medical_devices/start_medical_devices_client.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/general/monitoring_central/start_openice.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/general/monitoring_central/start_sdn_controller.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="31" selection-end-line="3" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/500/monitoring_central/tcp-tcp-start_sdn_manager.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/500/monitoring_central/udp-udp-start_sdn_manager.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/500/monitoring_central/udp-tcp-start_sdn_manager.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/100/monitoring_central/tcp-tcp-start_sdn_manager.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/100/monitoring_central/udp-tcp-start_sdn_manager.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="41" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/100/monitoring_central/udp-udp-start_sdn_manager.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/monitoring.central.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monitoring.central.index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/general/monitoring_central/stop_sdn_controller.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="61" lean-forward="true" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/general/monitoring_central/stop_sdn_manager.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="61" selection-start-column="61" selection-end-column="61" />
         </state>
       </provider>
     </entry>

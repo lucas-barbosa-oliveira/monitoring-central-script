@@ -18,9 +18,10 @@ export class MonitoringCentral {
         });
     }
 
-    public startSdnManager(script: string): Promise<boolean>{
+    public startSdnManager(path: string, script: string): Promise<boolean>{
         return new Promise<boolean>((resolve, reject) => {
-            shell.exec(script)
+            let program = script + ' ' + path ;
+            shell.exec(program, {async:true})
             resolve()
         });
     }
