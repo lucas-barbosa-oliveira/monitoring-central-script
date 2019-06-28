@@ -5,7 +5,10 @@ import {ScriptsMonitoringCentral} from "./utils/scripts.monitoring.central";
 let bus: CommunicationBus = new CommunicationBus();
 let central: MonitoringCentral= new MonitoringCentral();
 
-let time: number = 30000;
+let time: number = 180000;
+
+let openIceStarted = false;
+let dicomServerStarted = false;
 
 async function closeUdpTcp(): Promise<void> {
 
@@ -27,7 +30,7 @@ async function closeUdpTcp(): Promise<void> {
     await bus.sendUdpTrafficMenssage({action:'stop'});
 
     // Closing Supervisor OpenICE and stoping to send messages from Medical Devices of OpenICE
-    await central.closeOpenIce(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.STOP_OPENICE_SCRIPT);
+    // await central.closeOpenIce(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.STOP_OPENICE_SCRIPT);
     await bus.sendMedicalDeviceMenssage({action:'stop'});
 
 }
@@ -53,7 +56,7 @@ async function closeUdpUdp(): Promise<void> {
     await bus.sendUdpTrafficMenssage({action:'stop'});
 
     // Closing Supervisor OpenICE and stoping to send messages from Medical Devices of OpenICE
-    await central.closeOpenIce(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.STOP_OPENICE_SCRIPT);
+    // await central.closeOpenIce(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.STOP_OPENICE_SCRIPT);
     await bus.sendMedicalDeviceMenssage({action:'stop'});
 
 }
@@ -94,11 +97,17 @@ async function mainUdpTcp(bandwitdh: string, sndManager?: boolean): Promise<void
     await central.startWireshark(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_WIRESHARK_SCRIPT);
 
     // Starting Supervisor OpenICE and send a message for Medical Devices of OpenICE to sending data
-    await central.startOpenIce(__dirname,ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_OPENICE_SCRIPT);
+    if (!openIceStarted){
+        openIceStarted = true;
+        await central.startOpenIce(__dirname,ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_OPENICE_SCRIPT);
+    }
     await bus.sendMedicalDeviceMenssage({action:'start'});
 
     // Starting DCM4CHEE and send a message for workstation DICOM sending images
-    await central.startDicomServer(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_DICOM_SERVER_SCRIPT);
+    if (!dicomServerStarted) {
+        dicomServerStarted = true;
+        await central.startDicomServer(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_DICOM_SERVER_SCRIPT);
+    }
     await bus.sendWorkstationDicomMenssage({action:'start', bandwidth: bandwitdh});
 
     // Starting UDP Server and send a message for start sending data
@@ -128,7 +137,10 @@ async function mainUdpUdp(bandwitdh: string, sndManager?: boolean): Promise<void
     await central.startWireshark(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_WIRESHARK_SCRIPT);
 
     // Starting Supervisor OpenICE and send a message for Medical Devices of OpenICE to sending data
-    await central.startOpenIce(__dirname,ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_OPENICE_SCRIPT);
+    if (!openIceStarted){
+        openIceStarted = true;
+        await central.startOpenIce(__dirname,ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_OPENICE_SCRIPT);
+    }
     await bus.sendMedicalDeviceMenssage({action:'start'});
 
     // Starting Call VoIp
@@ -161,7 +173,10 @@ async function mainTcpTcp(bandwitdh: string, sndManager?: boolean): Promise<void
     await central.startWireshark(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_WIRESHARK_SCRIPT);
 
     // Starting DCM4CHEE and send a message for workstation DICOM start sending images
-    await central.startDicomServer(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_DICOM_SERVER_SCRIPT);
+    if (!dicomServerStarted) {
+        dicomServerStarted = true;
+        await central.startDicomServer(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_DICOM_SERVER_SCRIPT);
+    }
     await bus.sendWorkstationDicomMenssage({action:'start', bandwidth: bandwitdh});
 
     // Send a message for The second workstation DICOM to start sending images
@@ -173,7 +188,7 @@ async function mainTcpTcp(bandwitdh: string, sndManager?: boolean): Promise<void
 }
 
 bus.startConnection('192.168.0.105').then(async () => {
-    setInterval(mainUdpUdp, time, '100',true);
+    setInterval(mainUdpUdp, time, '100');
     // mainUdpTcp('500')
 });
 
