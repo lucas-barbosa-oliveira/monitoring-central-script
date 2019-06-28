@@ -121,23 +121,23 @@ async function mainUdpUdp(bandwitdh: string, sndManager?: boolean): Promise<void
         await central.startSdnController(__dirname,ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_SDN_CONTROLLER_SCRIPT);
     }
 
-    // // Starting sdn controller configuration
-    // await central.startSdnConfiguration(path + ScriptsMonitoringCentral.MONITORING_CENTRAL + ScriptsMonitoringCentral.START_SDN_CONFIGURATIONS_SCRIPT);
-    //
-    // // Stating Network Monitoring over Wireshark
-    // await central.startWireshark(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_WIRESHARK_SCRIPT);
-    //
-    // // Starting Supervisor OpenICE and send a message for Medical Devices of OpenICE to sending data
-    // await central.startOpenIce(__dirname,ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_OPENICE_SCRIPT);
-    // await bus.sendMedicalDeviceMenssage({action:'start'});
-    //
-    // // Starting Call VoIp
-    // await central.startVoipServer(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_VOIP_SERVER_SCRIPT);
-    // await bus.sendCallVoIpMenssage({action:'start'});
-    //
-    // // Starting UDP Server and send a message for start sending data
-    // await central.startUdpServer(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_UDP_SERVER_SCRIPT);
-    // await bus.sendUdpTrafficMenssage({action:'start', bandwidth: bandwitdh});
+    // Starting sdn controller configuration
+    await central.startSdnConfiguration(path + ScriptsMonitoringCentral.MONITORING_CENTRAL + ScriptsMonitoringCentral.START_SDN_CONFIGURATIONS_SCRIPT);
+
+    // Stating Network Monitoring over Wireshark
+    await central.startWireshark(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_WIRESHARK_SCRIPT);
+
+    // Starting Supervisor OpenICE and send a message for Medical Devices of OpenICE to sending data
+    await central.startOpenIce(__dirname,ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_OPENICE_SCRIPT);
+    await bus.sendMedicalDeviceMenssage({action:'start'});
+
+    // Starting Call VoIp
+    await central.startVoipServer(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_VOIP_SERVER_SCRIPT);
+    await bus.sendCallVoIpMenssage({action:'start'});
+
+    // Starting UDP Server and send a message for start sending data
+    await central.startUdpServer(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_UDP_SERVER_SCRIPT);
+    await bus.sendUdpTrafficMenssage({action:'start', bandwidth: bandwitdh});
 
     if (sndManager){
         await central.startSdnManager(__dirname,path + ScriptsMonitoringCentral.MONITORING_CENTRAL + "udp-udp-" + ScriptsMonitoringCentral.START_SDN_MANAGER_SCRIPT);
