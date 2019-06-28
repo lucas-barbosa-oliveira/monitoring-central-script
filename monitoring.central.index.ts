@@ -84,6 +84,11 @@ async function closeTcpTcp(): Promise<void> {
 }
 
 async function mainUdpTcp(bandwitdh: string, sndManager?: boolean): Promise<void> {
+    if(repeatNumber === tesNumber){
+        await closeUdpTcp();
+        process.exit(0)
+    }
+
     const path: string  = ScriptsMonitoringCentral.SCRIPT_PATH + bandwitdh
     // Clear and Close all configuration and application
     await closeUdpTcp();
@@ -101,6 +106,7 @@ async function mainUdpTcp(bandwitdh: string, sndManager?: boolean): Promise<void
     // Starting Supervisor OpenICE and send a message for Medical Devices of OpenICE to sending data
     if (!openIceStarted){
         openIceStarted = true;
+        await central.closeOpenIce(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.STOP_OPENICE_SCRIPT);
         await central.startOpenIce(__dirname,ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_OPENICE_SCRIPT);
     }
     await bus.sendMedicalDeviceMenssage({action:'start'});
@@ -108,6 +114,7 @@ async function mainUdpTcp(bandwitdh: string, sndManager?: boolean): Promise<void
     // Starting DCM4CHEE and send a message for workstation DICOM sending images
     if (!dicomServerStarted) {
         dicomServerStarted = true;
+        await central.closeDicomServer(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.STOP_DICOM_SERVER_SCRIPT);
         await central.startDicomServer(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_DICOM_SERVER_SCRIPT);
     }
     await bus.sendWorkstationDicomMenssage({action:'start', bandwidth: bandwitdh});
@@ -121,14 +128,14 @@ async function mainUdpTcp(bandwitdh: string, sndManager?: boolean): Promise<void
     }
 
     repeatNumber++;
+}
 
+async function mainUdpUdp(bandwitdh: string, sndManager?: boolean): Promise<void> {
     if(repeatNumber === tesNumber){
         await closeUdpUdp();
         process.exit(0)
     }
-}
 
-async function mainUdpUdp(bandwitdh: string, sndManager?: boolean): Promise<void> {
     const path: string  = ScriptsMonitoringCentral.SCRIPT_PATH + bandwitdh
 
     // // Clear and Close all configuration and application
@@ -147,6 +154,7 @@ async function mainUdpUdp(bandwitdh: string, sndManager?: boolean): Promise<void
     // Starting Supervisor OpenICE and send a message for Medical Devices of OpenICE to sending data
     if (!openIceStarted){
         openIceStarted = true;
+        await central.closeOpenIce(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.STOP_OPENICE_SCRIPT);
         await central.startOpenIce(__dirname,ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_OPENICE_SCRIPT);
     }
     await bus.sendMedicalDeviceMenssage({action:'start'});
@@ -164,14 +172,14 @@ async function mainUdpUdp(bandwitdh: string, sndManager?: boolean): Promise<void
     }
 
     repeatNumber++;
-
-    if(repeatNumber === tesNumber){
-        await closeUdpUdp();
-        process.exit(0)
-    }
 }
 
 async function mainTcpTcp(bandwitdh: string, sndManager?: boolean): Promise<void> {
+    if(repeatNumber === tesNumber){
+        await closeTcpTcp();
+        process.exit(0)
+    }
+
     const path: string  = ScriptsMonitoringCentral.SCRIPT_PATH + bandwitdh
 
     // Clear and Close all configuration and application
@@ -190,6 +198,7 @@ async function mainTcpTcp(bandwitdh: string, sndManager?: boolean): Promise<void
     // Starting DCM4CHEE and send a message for workstation DICOM start sending images
     if (!dicomServerStarted) {
         dicomServerStarted = true;
+        await central.closeDicomServer(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.STOP_DICOM_SERVER_SCRIPT);
         await central.startDicomServer(ScriptsMonitoringCentral.NORMAL_SCENARIO + ScriptsMonitoringCentral.START_DICOM_SERVER_SCRIPT);
     }
     await bus.sendWorkstationDicomMenssage({action:'start', bandwidth: bandwitdh});
@@ -202,15 +211,10 @@ async function mainTcpTcp(bandwitdh: string, sndManager?: boolean): Promise<void
     }
 
     repeatNumber++;
-
-    if(repeatNumber === tesNumber){
-        await closeUdpUdp();
-        process.exit(0)
-    }
 }
 
 bus.startConnection('192.168.0.105').then(async () => {
-    setInterval(mainUdpUdp, time, '100');
+    setInterval(mainUdpUdp, time, '500');
     // mainUdpTcp('500')
 });
 

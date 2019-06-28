@@ -106,8 +106,11 @@ export class MonitoringCentral {
         });
     }
 
-    public closeDicomServer(): Promise<boolean>{
-        return new Promise<boolean>((resolve, reject) => {resolve()});;
+    public closeDicomServer(script: string): Promise<boolean>{
+        return new Promise<boolean>((resolve, reject) => {
+            shell.exec(script)
+            resolve()
+        });
     }
 
     public closeWireshark(script: string): Promise<boolean>{
