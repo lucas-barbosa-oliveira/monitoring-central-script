@@ -214,7 +214,7 @@ async function mainTcpTcp(bandwitdh: string, sndManager?: boolean): Promise<void
 }
 
 bus.startConnection('192.168.0.105').then(async () => {
-    setInterval(mainUdpUdp, time, '500');
+    setInterval(mainUdpTcp, time, '100');
     // mainUdpTcp('500')
 });
 
