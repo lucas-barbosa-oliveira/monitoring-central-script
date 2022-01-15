@@ -13,7 +13,7 @@
     "@types/node": "^12.0.5",
     "@types/shelljs": "^0.8.5",
     "amqp-ts": "^1.4.0",
-    "shelljs": "^0.8.3",
+    "shelljs": "^0.8.5",
     "tsc": "^1.20150623.0",
     "typescript": "^3.5.2"
   }
